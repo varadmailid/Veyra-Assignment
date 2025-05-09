@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/champion.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+
+    <title>Shorts Shopping</title>
+    
+  </head>
+  <body>
+    <div id = "nav"></div>
+    <script>
+      $("#nav").load("nav.html");
+    </script>
+   
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card custom-card-28">
+            <img src="../images/shorts.jpg" class="card-img-top" alt="Real Madrid shorts">
+            <div class="card-body">
+              <h5 class="card-title">Real Madrid shorts</h5>
+              <p class="card-text">Cost :400₹</p>
+<?php
+
+         $RMS_Avail ='Y' ; // this will come from table of db
+         if($RMS_Avail == 'Y')
+         {
+           $Available = 'Add To Cart';
+         }
+         else
+         {
+          $Available = 'Not Available';
+         }
+?>
+<?php  if($RMS_Avail == 'Y')
+         { ?>
+ <a href="#" class="btn btn-primary"> <?php echo $Available; ?></a>
+  <?php }
+  else
+  {
+    ?>
+    <button type="button" class="btn btn-secondary btn-lg" disabled> <?php echo $Available; ?></button>
+     <?php
+  }?>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card custom-card-28">
+            <img src="../images/shorts1.jpg" class="card-img-top" alt="Barca shorts">
+            <div class="card-body">
+              <h5 class="card-title">Barca shorts</h5>
+              <p class="card-text">Cost :600₹</p>
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col move-right">
+          <div class="card custom-card-28">
+            <img src="../images/shorts2.jpg" class="card-img-top" alt="Man Utd shorts">
+            <div class="card-body">
+              <h5 class="card-title">ManU shorts</h5>
+              <p class="card-text">Cost :650₹</p>
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row card-spacing-top">
+        <div class="col card-container">
+          <div class="card custom-card-28">
+            <img src="../images/shorts3.jpg" class="card-img-top" alt="Man City Shorts">
+            <div class="card-body">
+              <h5 class="card-title">Man City Shorts</h5>
+              <p class="card-text">Cost :800₹</p>
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="card custom-card-28 move-fifth-card">
+            <img src="../images/shorts4.jpg" class="card-img-top" alt="BVB Shorts">
+            <div class="card-body">
+
+
+              <h5 class="card-title">BVB Shorts</h5>
+              <p class="card-text">Cost :650₹</p>
+
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col card-container">
+          <div class="card custom-card-28 move-sixth-card">
+          <div class="card custom-card-28">
+            <img src="../images/shorts5.jpg" class="card-img-top" alt="Bayern Munich">
+            <div class="card-body">
+              <h5 class="card-title">Bayern Munich Shorts</h5>
+              <p class="card-text">Cost :850₹</p>
+              <a href="#" class="btn btn-primary">Add To Cart</a>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- Required JavaScript for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

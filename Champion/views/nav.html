@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>My Shopping Website</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/champion.css" type="text/css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="veyra.html">Veyra</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <!-- Products Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Products
+          </a>
+          <div class="dropdown-menu" aria-labelledby="productsDropdown">
+            <a class="dropdown-item" href="jersey.html">Jerseys</a>
+            <a class="dropdown-item" href="shorts.html">Shorts</a>
+            <a class="dropdown-item" href="shoes.html">Shoes</a>
+          </div>
+        </li>
+
+        <!-- Login Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Login
+          </a>
+          <div class="dropdown-menu" aria-labelledby="loginDropdown">
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal">Brands</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#userLoginModal">Users</a>
+          </div>
+        </li>
+
+        <!-- Contact Us -->
+        <li class="nav-item">
+          <a class="nav-link" href="contact_us.html">Contact Us</a>
+        </li>
+      </ul>
+
+      <!-- Search Form -->
+      <form class="form-inline my-2 my-lg-0" action="nav1.html">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="loginModalLabel">Sign In As Brand</h5>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+            </div>
+            <div class="form-group form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">Keep Me Signed In</label>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='nav1.html'">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- User Login Modal -->
+<div class="modal fade" id="userLoginModal" tabindex="-1" role="dialog" aria-labelledby="userLoginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="userLoginModalLabel">Sign In As User</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="userEmail">Email</label>
+              <input type="email" class="form-control" id="userEmail">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="userPassword">Password</label>
+              <input type="password" class="form-control" id="userPassword">
+            </div>
+          </div>
+          <div class="form-group form-check">
+            <input class="form-check-input" type="checkbox" id="userKeepSignedIn">
+            <label class="form-check-label" for="userKeepSignedIn">Keep Me Signed In</label>
+          </div>
+          <button type="button" class="btn btn-success" onclick="window.location.href='user.html'">Sign in</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Bootstrap + jQuery Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

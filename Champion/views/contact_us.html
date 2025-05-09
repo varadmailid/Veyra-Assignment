@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+    <title>My shopping website</title>
+  </head>
+  <body>
+
+   
+
+    <form action="../models/contact_us_be.php" method="POST" onsubmit="return VerifyInputs()">
+      <div id="nav"></div>
+      <script>
+             $( "#nav" ).load( "nav.html" );
+        </script>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">First Name:</label>
+            <input type="text" class="form-control" id="_name" name="name" placeholder="Enter your name here: ">
+            <label id ="Namevalidation" hidden> Validaitons </label>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Last Name:</label>
+            <input type="text" class="form-control" id="_surname" name ="surname" placeholder="Enter your surname here: ">
+            <label id ="lastNamevalidation" hidden> Validaitons </label>
+          </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address:</label>
+            <input type="email" class="form-control" id="_Email" name ="email" placeholder="name@example.com">
+            <label id ="Emailvalidation" hidden> Validaitons </label>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Any suggestion that You want to give:</label>
+            <textarea class="form-control" id="_suggestion" name ="suggestion" rows="3"></textarea>
+            <label id ="Suggestvalidation" hidden> Validaitons </label>
+          </div>
+
+          <input type="Submit" class="btn btn-primary" id ="_btnsubmit" click ="VerifyInputs">
+
+</form>
+       <script src="../javascript/contact_us.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

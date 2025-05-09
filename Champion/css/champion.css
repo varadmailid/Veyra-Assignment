@@ -1,0 +1,40 @@
+.navbarfixed {
+  
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+
+.custom-card-28{
+  width: 18rem;
+  height: 28rem; 
+} 
+
+.move-right {
+  margin-right: -50px;
+}
+
+.card-spacing-top {
+  margin-top: 20px; 
+}
+
+.card-container {
+  display: flex;
+  gap: 20px; 
+}
+
+.move-fifth-card {
+  margin-left: 90px; 
+}
+
+.move-sixth-card{
+  margin-left: 80px;
+}
+
+.custom-card-30{
+  width: 18rem;
+  height: 30rem; 
+} 
+
+
